@@ -25,7 +25,8 @@ public class MatchingLetters
             // If user would like to repeat, continue loop, otherwise exit
             System.out.print("\nWould you like to compare strings again? \nType 'Y' for yes or 'N' for no: ");
             answer = input.next().charAt(0);
-        } while ((answer == 'Y') || (answer == 'y'));
+            input.nextLine(); // Take in newline char so next iteration starts with user string input
+        } while (answer == 'Y' || answer == 'y');
     }
     // Compares two strings and displays the matching letters, otherwise advises no matches
     public static void containsMatching(String a, String b)
