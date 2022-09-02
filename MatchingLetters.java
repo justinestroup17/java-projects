@@ -18,9 +18,11 @@ public class MatchingLetters
 
             System.out.println("Enter the second string, and then press enter:");
             String stringTwo = input.nextLine();
-    
+            
+            // Check if strings contain matching letters by calling method
             containsMatching(stringOne, stringTwo);
-
+            
+            // If user would like to repeat, continue loop, otherwise exit
             System.out.print("\nWould you like to compare strings again? \nType 'Y' for yes or 'N' for no: ");
             answer = input.next().charAt(0);
         } while ((answer == 'Y') || (answer == 'y'));
